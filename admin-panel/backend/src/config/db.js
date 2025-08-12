@@ -1,5 +1,8 @@
-const mongoose = require('mongoose');
-require('dotenv').config();
+const mongoose = require("mongoose");
+const  dotenv = require("dotenv");
+dotenv.config({
+  path :"../../.env"
+})
 console.log('MONGO_URI:', process.env.MONGO_URI);
 const connectDB = async () => {
   try {
@@ -15,3 +18,6 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
+
+
+
