@@ -28,8 +28,10 @@ app.use('/api/auth', require('./routes/auth'));
 app.use('/api/users', require('./routes/users'));
 app.use('/api/drivers', require('./routes/drivers'));
 app.use('/api/ambulances', require('./routes/ambulances'));
+app.use('/api/booking', require('./routes/booking'));
 
 // Error handler (must be last)
 app.use(errorHandler);
 
 module.exports = app;
+
